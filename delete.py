@@ -1,10 +1,10 @@
-from exeptions import data_delete
+from exceptions import data_delete
 from search import search
 
 
-def delete():
+def delete():  # удаление заметки
     if search() == False:
-        print('Данные для удаления отсутсвтуют')
+        print('Данные для удаления отсутствуют')
         return
     else:
         del_key = data_delete()
@@ -19,7 +19,7 @@ def delete():
                     flag = True
                     try:
                         input_del = int(input(
-                            'вы действительно хотите удалить заметку№{}\n{}\n(1 - да, 2 - нет):'.format(del_key,line)))
+                            'Вы действительно хотите удалить заметку №{}\n{}\n(1 - да, 2 - нет): '.format(del_key, line)))
                         if input_del == 1:
                             print('\nЗаметка №{} успешно удалена'.format(del_key))
                         elif input_del == 2:

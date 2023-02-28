@@ -1,9 +1,9 @@
 from search import search
 from print_info import print_csv
-from exeptions import user_choice
+from exceptions import user_choice
 from delete import delete
 from add_info import adding
-from editting import editing
+from editing import editing
 
 
 
